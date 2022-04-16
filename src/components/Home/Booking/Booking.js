@@ -3,7 +3,7 @@ import React from 'react';
 const Booking = () => {
     return (
         <div>
-            <h2>this is booking</h2>
+            <h2>Services</h2>
         </div>
     );
 };

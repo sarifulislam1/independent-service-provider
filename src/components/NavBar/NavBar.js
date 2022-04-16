@@ -8,12 +8,12 @@ const NavBar = () => {
             <Navbar bg="light" expand="lg">
                 <Container>
                     {/* <Navbar.Brand className='fw-bold fs-3' href="#home">Photography</Navbar.Brand> */}
-                    <h3 className='fw-bold fs-3'>I - Photographer</h3>
+                    <h3 className='fw-bold fs-3 text-primary'>I - Photographer</h3>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className=' nab-div'>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/banner'>Home</NavLink>
-                            <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/booking'>Booking</NavLink>
+                            <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/booking'>Checkout</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/blogs'>Blogs</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/about'>About</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/register'>Register</NavLink>
