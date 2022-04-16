@@ -1,8 +1,18 @@
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link, NavLink } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './NavBar.css'
 const NavBar = () => {
+
+    const [user] = useAuthState(auth);
+
+    const handleSignOut = () => {
+        signOut(auth);
+    }
+
     return (
         <nav>
             <Navbar bg="light" expand="lg">
@@ -17,7 +27,12 @@ const NavBar = () => {
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/blogs'>Blogs</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/about'>About</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/register'>Register</NavLink>
-                            <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/login'>Login</NavLink>
+                            {
+                                user ?
+                                    <NavLink onClick={handleSignOut} className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/login'>Log out</NavLink>
+                                    :
+                                    <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/login'>Login</NavLink>
+                            }
 
 
                         </Nav>
