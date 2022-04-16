@@ -6,6 +6,8 @@ import Banner from './components/Home/Banner/Banner';
 import Booking from './components/Home/Booking/Booking'
 import About from './components/About/About'
 import Blogs from './components/Blogs/Blogs'
+import Footer from './components/Footer/Footer'
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -17,7 +19,9 @@ function App() {
         <Route path='/booking' element={<Booking></Booking>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='register' element={<Register></Register>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }

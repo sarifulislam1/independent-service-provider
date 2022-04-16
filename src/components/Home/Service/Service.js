@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Card } from 'react-bootstrap';
 import './Service.css'
 const Service = (props) => {
-    const { name, rating, review, img } = props.service
+    const { name, review, img } = props.service
     return (
         <div>
             <div >
