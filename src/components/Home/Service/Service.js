@@ -18,6 +18,10 @@ const Service = (props) => {
                         <Card.Text>
                             {review}
                         </Card.Text>
+                        <p>☑️ 100 raw pictures</p>
+                        <p>☑️ 50 edit pictures</p>
+                        <p>☑️ Choose your photoshoot location</p>
+                        <p>☑️ 2 Day session</p>
                         <p>$ {price}</p>
                         <Button onClick={goCheckout} variant="primary">Checkout</Button>
                     </Card.Body>

@@ -1,8 +1,8 @@
 import React from 'react';
-
+import './About.css'
 const About = () => {
     return (
-        <div className=' mx-auto d-flex justify-content-center align-items-center text-start mt-5 container p-3 rounded'>
+        <div className='about-div container'>
             <div>
                 <h2 className='text-primary'>Hey I'm Sariful Islam</h2>
                 <p>I'm a student.From now after 6 month i want to become a web developer.👋</p>
