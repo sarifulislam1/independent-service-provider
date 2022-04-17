@@ -2,7 +2,7 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, Route } from 'react-router-dom';
 import auth from '../../firebase.init';
 import './NavBar.css'
 const NavBar = () => {
@@ -18,12 +18,13 @@ const NavBar = () => {
             <Navbar bg="light" expand="lg">
                 <Container>
                     {/* <Navbar.Brand className='fw-bold fs-3' href="#home">Photography</Navbar.Brand> */}
-                    <h3 className='fw-bold fs-3 text-primary'>I - Photographer</h3>
+                    <h4 className='fw-bold  text-primary'>I-Photographer</h4>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className=' nab-div'>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/banner'>Home</NavLink>
-                            <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/booking'>Checkout</NavLink>
+
+                            <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/checkout'>Checkout</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/blogs'>Blogs</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/about'>About</NavLink>
                             <NavLink className={({ isActive }) => (isActive ? "nav-bar" : "nav-bar2")} to='/register'>Register</NavLink>

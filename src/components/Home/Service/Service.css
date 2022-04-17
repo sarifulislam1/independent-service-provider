@@ -7,3 +7,21 @@
     text-align: start;
 
 }
+
+
+@media only screen and (min-width:569),
+(max-width: 769px) {
+    .service {
+        display: block;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 30px;
+        padding: 15px;
+        text-align: start;
+
+    }
+
+    .service img {
+        width: 100%;
+    }
+}
