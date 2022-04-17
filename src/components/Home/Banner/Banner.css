@@ -27,12 +27,13 @@
         justify-content: center;
         margin-top: 30px;
         text-align: start;
+        margin: auto;
     }
 }
 
-@media only screen and (min-width: 787px),
+/* @media only screen and (min-width: 787px),
 (max-width:992) {
-    /* .banner-div {
+    .banner-div {
         display: inline-block
-    } */
-}
+    }
+} */

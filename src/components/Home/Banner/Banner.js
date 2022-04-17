@@ -4,7 +4,7 @@ import './Banner.css'
 const Banner = () => {
     return (
         <div >
-            <div className=' banner-div container'>
+            <div className=' banner-div container mx-auto'>
                 <div>
                     <h2 className='text-primary'>Independent Photographer</h2>
                     <p>Photography is the art, application, and practice of creating durable images by recording light, either electronically by means of an image sensor, or chemically by means of a light-sensitive material such as photographic film.</p>
