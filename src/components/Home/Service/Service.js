@@ -3,7 +3,7 @@ import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import './Service.css'
 const Service = (props) => {
-    const { name, review, img } = props.service
+    const { name, review, img, price } = props.service
     const navigate = useNavigate()
     const goCheckout = () => {
         navigate('/checkout')
@@ -18,6 +18,7 @@ const Service = (props) => {
                         <Card.Text>
                             {review}
                         </Card.Text>
+                        <p>$ {price}</p>
                         <Button onClick={goCheckout} variant="primary">Checkout</Button>
                     </Card.Body>
                 </Card>

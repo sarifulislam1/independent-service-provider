@@ -4,20 +4,20 @@
         "id": 1,
         "img": "https://data.whicdn.com/images/313691231/original.jpg",
         "review": "Aesthetic photography is a photographic practice of capturing visual beauty within an image. Just as the term “beauty” can be subjective, “aesthetic” can be distinguished as something that is immediately visually pleasing to a viewer.",
-        "rating": 4.5
+        "price": 4500
     },
     {
         "name": "Wedding",
         "id": 2,
         "img": "https://cdn.pixabay.com/photo/2014/09/13/04/59/couple-443600__480.jpg",
         "review": "Wedding photography is a photography niche that focuses on capturing the events of the wedding day. It also often includes an engagement photoshoot, boudoir photos, and the wedding preparations. The photoshoot itself lasts from the beginning of the",
-        "rating": 4
+        "price": 4000
     },
     {
         "name": "Modeling",
         "id": 3,
         "img": "https://cutewallpaper.org/21/male-model-wallpaper/Model-HD-Wallpaper-Background-Image-2000x1500-ID-.jpg",
         "review": "A model photography shoot can also refer to a common practice where a photographer is taking photographs of a model for the model's portfolio. This usually means that a model pays a photographer to take his or her head and body shots.",
-        "rating": 5
+        "price": 5000
     }
 ]

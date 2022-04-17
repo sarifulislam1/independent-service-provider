@@ -1,10 +1,27 @@
-# Getting Started with Create React App
+# Independent Photographer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+project live link[Independent Photographer](https://independent-photographer.web.app/).
 
-## Available Scripts
 
-In the project directory, you can run:
+
+# Hi, I'm Sariful Islam! 👋
+
+
+## About Project
+
+ - This is a Independent worker Project
+ - This project build on React
+ - This is a SPA
+ - I use raw CSS for this project
+ - This project have one header path that navigate in other pages
+## PROJECT MADE BY
+
+**React** 
+**Route** 
+**Raw CSS**  
+**Firebase Hook**  
+**React Bootstrap**  
+**React Tostefy** etc  
 
 ### `npm start`
 
